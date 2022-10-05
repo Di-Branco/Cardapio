@@ -12,18 +12,30 @@
     p {
       width: 100%;
     }
-    .imagem {
+    body {
       background-color: #ac2434;
+    }
+    footer {
+      display: block;
+    }
+    .imagem {
+      
       display: flex;
-    
+    }
+    @media (min-resolution: 1080px) {
+      .imagem {
+      background-image: url("./img/BackgroundMobile.jpg");
+      display: flex;
+    }
     }
   </style>
   <title>ÁGUA DE COCO NA PORCELANA</title>
 </head>
-<body class="imagem">
+<body >
   
-  <p><img src="./Img/ÁGUA DE COCO NA PORCELANA.jpg" alt=""></p>
-  
+  <p class="imagem"><img src="./Img/ÁGUA DE COCO NA PORCELANA.jpg" alt=""></p>
+  <br>
+  <footer><img src="./Img/DI BRANCO LOGO.png" alt=""></footer>
   
 </body>
 </html>
