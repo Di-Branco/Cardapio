@@ -7,10 +7,6 @@
   <link rel="icon" type="image/x-icon" href="./Img/DI BRANCO LOGO.png">
   <style>
     img {
-      margin: auto;
-      width: 100%;
-    }
-    p {
       width: 100%;
     }
     body {
@@ -19,23 +15,49 @@
     footer {
       display: block;
     }
-    .imagem {
-      
-      display: flex;
-    }
-    @media (min-resolution: 1080px) {
-      .imagem {
-      background-image: url("./img/BackgroundMobile.jpg");
-      display: flex;
-    }
-    }
+    * {box-sizing:border-box}
+    .slideshow-container {
+  max-width: 50%;
+  margin: auto;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  display: block;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@media screen and (max-width: 850px) {
+  
+.slideshow-container {
+  max-width: 80%;
+  padding-top: 20%;
+}
+}
+
+@media screen and (max-width: 450px) {
+  
+.slideshow-container {
+  max-width: 95%;
+  padding-top: 50%;
+}
+}
   </style>
   <title>PAELLA FRUTOS DO MAR</title>
 </head>
 <body >
   
-  <p class="imagem"><img src="./Img/PAELLA FRUTOS DO MAR.jpg" alt=""></p>
-  <br>
+  <div class="slideshow-container">
+
+    <div class="fade">
+      <img src="./Img/PAELLA FRUTOS DO MAR.jpg" style="width:100%">
+    </div>
+  
+  </div>
   <footer><img src="./Img/DI BRANCO LOGO.png" alt=""></footer>
   
 </body>
